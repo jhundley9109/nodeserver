@@ -1,0 +1,27 @@
+extends layout
+
+block head
+	script(src="/js/signup.js")
+
+block content
+	div.manageaccountblock.centerpage
+		h1 Sign in
+		form(id="signupForm", class="signupform", method="post", action="/account/signin")
+			if errorString !== undefined
+				div= errorString
+			div
+				| Don't have an account? Please 
+				a(href="/account/create")
+					| register
+			label(for="userName", class="blocklabel")
+				| Username
+			div
+				input(type="text", id="userName", name="username", placeholder="Username")
+				div#userNameValid
+			label(for="password", class="blocklabel")
+				| Password
+			div
+				input(type="password", id="password", name="password", placeholder="Password")
+				div#passwordValid
+			button(type="submit", id="signinBtn")
+				| Sign in

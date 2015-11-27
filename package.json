@@ -1,0 +1,29 @@
+{
+  "name": "node",
+  "version": "0.0.1",
+  "description": "Test app",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "crypto": "0.0.3",
+    "express": "^4.13.3",
+    "express-mysql-session": "^0.4.3",
+    "express-session": "^1.12.1",
+    "jade": "^1.11.0",
+    "mysql": "^2.9.0",
+    "utils-merge": "^1.0.0"
+  },
+  "devDependencies": {
+    "node-inspector": "^0.12.3",
+    "nodemon": "^1.8.1"
+  },
+  "scripts": {
+    "start": "supervisor server.js",
+    "start-dev": "npm run watch-css & supervisor --debug server.js",
+    "watch-css": "node-sass -w public/scss/ -o public/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

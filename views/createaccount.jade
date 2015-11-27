@@ -1,0 +1,31 @@
+extends layout
+
+block head
+	script(src="/js/signup.js")
+
+block content
+	div.manageaccountblock.centerpage
+		div.customheader
+			| Create 
+			span.smaller
+				| an Account Now!
+		hr
+		if errorString !== undefined
+			div= errorString
+		div.alertinfo
+			| Already have an account? Please 
+			a.alertlink(href="/account/signin")
+				| Sign in
+		form(id="signupForm", class="accountform", method="post", action="/account/create")
+			div.linespacing
+				label(for="userName", class="blocklabel")
+					| Username
+				input(type="text", id="userName", name="username", placeholder="Username", autocomplete="off")
+				div#userNameValid
+			div.linespacing
+				label(for="password", class="blocklabel")
+					| Password
+				input(type="password", id="password", name="password", placeholder="Password")
+				div#passwordValid
+			button(type="submit", id="signupBtn")
+				| Sign In Now

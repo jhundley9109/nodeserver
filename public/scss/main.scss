@@ -1,0 +1,140 @@
+body {
+	margin: 0;
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.customheader {
+	font-size: 2em;
+	margin: 10px 0;
+	text-align: center;
+	.smaller {
+		font-size: .75em;
+	}
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px;
+	overflow: auto;
+}
+
+.alertinfo {
+	padding: 15px;
+	text-align: center;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	color: #3a87ad;
+	margin-bottom: 15px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+
+	.alertlink {
+		color: #2d6987;
+		font-weight: bold;
+	}
+}
+
+.navbar {
+	height: 50px;
+	background: linear-gradient(to bottom, #b5bdc8 0%, #828c95 36% ,#28343b 100%);
+	margin-bottom: 10px;
+	font-size: 14px;
+
+	.navright {
+		float:right;
+	}
+	.btn {
+		margin-top: 11px;
+		margin-bottom: 11px;
+	}
+}
+
+.mainnav {
+	float:left;
+
+	a {
+		color: white;
+	}
+
+	.flushbtn {
+		padding: 16px;
+		display: block;
+		float: left;
+		box-sizing: border-box;
+		height: 50px;
+
+		&:hover {
+			background-color: #28343b;
+		}
+	}
+}
+
+.manageaccountblock {
+	width: 600px;
+}
+
+.centerpage {
+	margin: 0 auto;
+}
+
+.btn {
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 3px;
+	color: #ffffff;
+	background-color: #828c95;
+	border-color: #dd4814;
+
+	&.btnsmall {
+		padding: 5px 10px;
+	}
+
+	&:hover {
+		background-color: #28343b;
+	}
+}
+
+.stuff {
+	text-align: center;
+}
+
+.asdf {
+	text-align: center;
+}
+
+.blocklabel {
+	text-align: right;
+	box-sizing: border-box;
+	float: left;
+	width: 25%;
+	padding-right: 15px;
+	padding-top: 9px;
+}
+
+.linespacing {
+	margin-bottom: 10px;
+}
+
+.accountform {
+	padding: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+
+	input {
+		box-sizing: border-box;
+		height: 38px;
+		padding: 8px 12px;
+		width: 75%;
+	    border-radius: 4px;
+	    border: 1px solid #cccccc;
+	}
+}
